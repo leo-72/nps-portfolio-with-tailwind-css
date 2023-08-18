@@ -655,10 +655,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mr-4 {
-  margin-right: 1rem;
-}
-
 .block {
   display: block;
 }
@@ -904,6 +900,14 @@ video {
 
 .pt-36 {
   padding-top: 9rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .text-center {
@@ -1233,16 +1237,12 @@ body {
     padding-bottom: 9rem;
   }
 
-  .lg\:pt-48 {
-    padding-top: 12rem;
-  }
-
-  .lg\:pt-24 {
-    padding-top: 6rem;
-  }
-
   .lg\:pb-48 {
     padding-bottom: 12rem;
+  }
+
+  .lg\:pt-48 {
+    padding-top: 12rem;
   }
 
   .lg\:text-5xl {
