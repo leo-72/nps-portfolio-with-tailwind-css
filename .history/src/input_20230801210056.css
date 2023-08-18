@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Helvetica', sans-serif;
+}
+
+.navbar-line{
+    @apply w-3 h-3 my-2 bg-black;
+}

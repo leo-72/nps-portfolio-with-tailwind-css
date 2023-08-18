@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Helvetica", sans-serif;
+  background: #000;
+}
+
+.navbar-line {
+  @apply ;
+}

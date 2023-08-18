@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+.navbar-line {
+  border-bottom: 1px solid #e2e8f0;
+}

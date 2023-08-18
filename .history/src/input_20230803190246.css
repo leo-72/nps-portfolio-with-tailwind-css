@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-line {
+  @apply w-[30px] h-[2px] my-2 block bg-black rounded-full;
+}
+
+.nl-active > span:nth-child(1)
