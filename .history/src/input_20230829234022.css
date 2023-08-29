@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: inherit;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-primary bg-opacity-80 backdrop-blur-sm;
+  box-shadow: inset 0 -1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-line {
+  @apply w-[30px] h-[2px] my-2 block bg-text_primary rounded-full;
+}
+
+.nl-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.nl-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.nl-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background-color: #ffac42;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .nav-item:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 1023.5px) {
+  .nav-item:hover::after {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes scaleIn {
+  
+}
+
+#to-top
+
