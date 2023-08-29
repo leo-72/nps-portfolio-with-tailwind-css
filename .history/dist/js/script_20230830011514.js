@@ -22,10 +22,8 @@ window.addEventListener("scroll", () => {
   if (window.scrollY > fixedNav) {
     toTop.style.display = "block";
   } else {
-    toTop.classList.add("hide");
     setTimeout(() => {
       toTop.style.display = "none";
-      toTop.classList.remove("hide");
     }, 500);
   }
 });

@@ -19,7 +19,7 @@ window.onscroll = function () {
 };
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > fixedNav) {
+  if (window.scrollY > 100) {
     toTop.style.display = "block";
   } else {
     toTop.classList.add("hide");

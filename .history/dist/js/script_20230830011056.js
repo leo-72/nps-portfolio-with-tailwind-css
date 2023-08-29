@@ -19,13 +19,13 @@ window.onscroll = function () {
 };
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > fixedNav) {
+  if (window.scrollY > 100) {
     toTop.style.display = "block";
   } else {
-    toTop.classList.add("hide");
+    toTopButton.classList.add("hide");
     setTimeout(() => {
-      toTop.style.display = "none";
-      toTop.classList.remove("hide");
+      toTopButton.style.display = "none";
+      toTopButton.classList.remove("hide");
     }, 500);
   }
 });
