@@ -24,6 +24,12 @@ window.onscroll = function () {
   }
 };
 
+window.addEventListener("scroll", () => {
+  if (window.scrollY > fixedNav) {
+  } else {
+  }
+});
+
 // Close Navbar
 window.addEventListener("click", function (e) {
   if (e.target != navbarLine && e.target != navMenu) {

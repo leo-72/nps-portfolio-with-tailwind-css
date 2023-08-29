@@ -24,6 +24,7 @@ window.onscroll = function () {
   }
 };
 
+
 // Close Navbar
 window.addEventListener("click", function (e) {
   if (e.target != navbarLine && e.target != navMenu) {

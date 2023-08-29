@@ -16,13 +16,19 @@ window.onscroll = function () {
     toTop.style.display = "block";
   } else {
     navbar.classList.remove("navbar-fixed");
+  }
+};
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > fixedNav) {
+  } else {
     toTop.classList.add("hide");
     setTimeout(() => {
       toTop.style.display = "none";
       toTop.classList.remove("hide");
     }, 500);
   }
-};
+});
 
 // Close Navbar
 window.addEventListener("click", function (e) {
