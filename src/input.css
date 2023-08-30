@@ -11,7 +11,7 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] bg-primary bg-opacity-80 backdrop-blur-sm;
+  @apply fixed z-[9999] bg-white_primary bg-opacity-80 backdrop-blur-sm dark:bg-primary dark:bg-opacity-80;
   box-shadow: inset 0 -1px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -89,4 +89,34 @@ body {
 
 #to-top.hide {
   animation: scaleOut 0.5s ease-in-out forwards;
+}
+
+#dark-mode:checked ~ label div.toggle-circle {
+  @apply translate-x-6;
+}
+
+@keyframes slideDownAnimation {
+  from {
+    bottom: 110px; /* Bottom saat perpindahan ke bawah */
+  }
+  to {
+    bottom: 44px; /* Bottom saat kembali ke atas */
+  }
+}
+
+@keyframes slideUpAnimation {
+  from {
+    bottom: 44px; /* Bottom saat perpindahan ke atas */
+  }
+  to {
+    bottom: 110px; /* Bottom saat perpindahan ke bawah */
+  }
+}
+
+.dark-mode-slide-down {
+  animation: slideDownAnimation 0.5s ease forwards;
+}
+
+.dark-mode-slide-up {
+  animation: slideUpAnimation 0.5s ease forwards;
 }

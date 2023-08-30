@@ -1,5 +1,6 @@
 module.exports = {
   content: ["index.html"],
+  darkMode: "class",
   theme: {
     container: {
       center: true,
@@ -8,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#1A1A1A",
-        secondary: "#333333",
+        secondary: "#383838",
         text_primary: "#FFAC42",
         text_secondary: "#FF1F57",
         stone1: "#57534E",
@@ -16,6 +17,7 @@ module.exports = {
         dark2: "#737373",
         dark3: "#151515",
         dark4: "#101010",
+        orange: "#D18C35",
         bg_navbar: "#78716c",
         navbarText: "#fafaf9",
         card: "#d6d3d1",
