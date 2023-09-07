@@ -60,4 +60,5 @@ if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.match
   darkModeContainer.style.bottom = `${darkModeInitialBottom}px`;
 } else {
   darkMode.checked = false;
+  darkModeContainer.style.bottom = `${darkModeInitialBottom}px`;
 }
