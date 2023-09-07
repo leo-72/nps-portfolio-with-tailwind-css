@@ -27,7 +27,6 @@ window.onscroll = function () {
   } else {
     navbar.classList.remove("navbar-fixed");
     toTop.classList.add("hide");
-    darkModeContainer.style.bottom = `${darkModeInitialBottom}px`;
     darkModeContainer.classList.add("dark-mode-slide-down");
     darkModeContainer.classList.remove("dark-mode-slide-up");
     setTimeout(() => {
